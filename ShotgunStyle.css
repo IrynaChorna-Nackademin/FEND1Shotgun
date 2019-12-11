@@ -1,0 +1,146 @@
+body { 
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: black;
+    
+}
+#game{
+    margin: auto;
+    width: 70%;
+    box-shadow: 0 0 70px rgba(116, 107, 168, 0.767);
+    border: 5px solid rgba(96, 27, 161, 0.281);
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 5%;
+}
+.rules span{
+    padding-left: 30px;
+    font-size: 30px;
+    color: rgb(130, 120, 158);
+    text-shadow: 0 5px 10px blueviolet;
+    
+}
+.rules{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-rules{
+    display: none;
+    position: absolute;
+    background-color: rgba(199, 218, 253, 0.918);
+    min-width: 300px;
+    box-shadow: 8px 8px 16px rgba(192, 214, 229, 0.788);
+    padding: 12px 16px;
+    z-index: 1;
+    color: black;
+}
+.rules:hover .dropdown-rules {
+    display: block;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.header{ 
+    color: rgb(185, 195, 223);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.header h1{
+    font-size: 50px;
+    text-shadow: 0 -3px 8px blueviolet;
+
+}
+
+.choice{
+    text-align: center;
+    font-size: 15vmax;
+}
+.choice button{    
+    border-color: rgba(2, 2, 2, 0);   
+    border-radius: 50%; 
+    background-color: rgba(79, 59, 117, 0.027);
+    box-shadow: 0 8px 30px 0 rgba(116, 107, 168, 0.767), 0 -6px 30px 0 rgba(235, 235, 235, 0.767);
+}
+.choice button:hover{
+    box-shadow: 0 8px 30px 0 rgba(235, 235, 235, 0.767), 0 -6px 30px 0 rgba(116, 107, 168, 0.767);
+    /* background-color: rgba(116, 107, 168, 0.274); */
+}
+button:disabled{        
+        opacity: 0.3;
+}
+  
+
+.choice h3{
+    color: rgb(169, 180, 209);
+    text-align: center;
+    font-size: 30px;
+    
+}
+.score{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.score label{
+    font-size: 25px;
+    color: rgb(173, 194, 252);
+    text-align: center;
+}
+.score h2{
+    color: rgb(173, 194, 252);
+    text-align: left;
+    padding: 5px;
+    font-size: 30px;
+    display: inline;
+    border-radius: 40%;
+    box-shadow: 0 0 15px rgba(101, 101, 153, 0.774);
+}
+
+.reSet{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.reSet button{
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 5%;
+    color: rgba(245, 247, 252, 0.856);
+    text-shadow: 0 0 3px rgb(158, 158, 240);
+    background-color: rgba(30, 27, 37, 0.699);
+    border: 2px solid rgba(148, 139, 158, 0.452);
+    box-shadow: 0 6px 20px rgba(116, 107, 168, 0.767), 0 -6px 20px rgba(116, 107, 168, 0.767);
+}
+.reSet button:hover {
+    box-shadow: 0 6px 20px 0 rgba(190, 184, 214, 0.911),  0 -6px 20px 0 rgba(190, 184, 214, 0.911);
+}
+@media screen and (max-width: 600px) {
+    body{
+    font-size: 0.5rem;
+      width: 100%;
+    }
+    .rules span{
+        font-size: 1.5rem;
+    }
+    .header h1{
+        font-size: 1.5rem;
+    }    
+    .choice h3{
+        font-size: 1.5rem;
+    }
+    .score label{
+        font-size: 1.2rem;       
+    }
+    .score h2{
+        font-size: 1.5rem;
+    }
+    .reSet button{
+        font-size: 1.5rem;
+    }
+}

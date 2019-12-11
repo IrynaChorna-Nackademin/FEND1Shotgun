@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ShotgunStyle.css">
+    <script src="ShotgunClass.js" defer></script>
+    <title>Shotgun | Hand Game </title>
+</head>
+<body>
+    <div id="game">
+        <div class="rules">
+            <span>Regler</span>
+            <div class="dropdown-rules"><p>Varje spelare börjar utan skott, och för att få fler skott måste du “Ladda”. 
+                Varje gång du laddar får du ett nytt skott. 
+                Skjuta mot Skjuta resulterar i att båda spelarna förlorar ett skott, men ingen vinner. 
+                Då en spelare samlat på sig tre skott kan denne använda sig av “Shotgun”, 
+                vilket vinner även om motspelaren “blockar” eller “skjuter”.</p></div>                
+        </div>
+
+        <div class="header">
+            <h1>Shotgun</h1>            
+        </div>
+
+        <div class="choice">
+            <button id="load"><img src="image/load.png" alt="Ladda"></button>
+            <button id="block"><img src="image/block.png" alt="Blockera"></button>
+            <button id="shot" disabled><img src="image/shot.png" alt="Skjuta"></button>
+            <h3>Välj</h3>
+        </div>
+
+        <div class ="score">
+            <label for="userScore"><strong>Spelaren</strong><br/>Antal skott</label>
+            <h2 id="userScore">0</h2>
+            <img class="userChoice" src="" alt="">
+            <img class="computerChoice" src="" alt="">
+            <h2 id="computerScore">0</h2>
+            <label for="computerScore"> <strong>Datoren</strong><br/>Antal skott</label>
+        </div>
+
+        <div class="reSet">
+            <button id="reset" type="reset">Börja om</button>
+        </div>
+    </div>
+        
+</body>
+</html>     
